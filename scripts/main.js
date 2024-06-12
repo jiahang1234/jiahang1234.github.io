@@ -24,13 +24,13 @@ myImage.onclick = () => {
 let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 function setUserName() {
-    const myName = prompt("Please enter your name.");
+    const myName = prompt("Hi, tell me who you are?");
     if (!myName) {
         setUserName();
       }
     else  {
     localStorage.setItem("name", myName);
-    myHeading.textContent = `Mozilla is cool, ${myName}`;
+    myHeading.textContent = `Hi ${myName}, Jellycat is cool! `;
   }}
 
 if (!localStorage.getItem("name")) {
