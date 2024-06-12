@@ -38,7 +38,7 @@ if (!localStorage.getItem("name")) {
     ;
 } else {
     const storedName = localStorage.getItem("name");
-    myHeading.textContent = `Mozilla is cool, ${storedName}`;
+    myHeading.textContent = `Hi ${storedName}, Jellycat is cool!`;
 }
 
 myButton.onclick = () => {
